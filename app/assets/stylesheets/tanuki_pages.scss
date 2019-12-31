@@ -5,9 +5,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-* {
-    font-family: "Kokoro", cursive;
+@font-face {
+  font-family: 'TnuFon';
+  src: font-url('TanukiMagic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* ----------------[S]BASE---------------- */
+
+* {
+    font-family: "TnuFon", cursive;
+}
+
 
 .title {
     padding: 30px;
@@ -15,5 +25,144 @@
 }
 
 .jumbotron{
-    background: #E6FFE9;
+
 }
+
+.top-page{
+  border: solid #008000;
+  border-radius: 10%;
+  padding:60px;
+  
+}
+
+.tanuki-image{
+   float:left;
+}
+
+.balloon{
+    margin: 25px;
+}
+
+.balloon:before,.balloon:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.sub-content{
+  margin:30px;
+}
+/* ----------------[E]BASE---------------- */
+
+/* ----------------[S]悲しみつぶやき---------------- */
+
+/* 吹き出し本体 */
+.sad-balloon{
+  position: relative;
+  padding: 20px;
+  background-color: #ade0ff;
+  border-radius: 30px;
+  margin-left: 100px;
+  display: inline-block;
+  margin-top:30px;
+}
+/* 大きい丸 */
+.sad-balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #ade0ff;
+  left: -35px;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+}
+/* 小さい丸 */
+.sad-balloon::after{
+  content: '';
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background-color: #ade0ff;
+  left: -55px;
+  bottom: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+/* ----------------[E]悲しみつぶやき---------------- */
+
+/* ----------------[S]はげましつぶやき---------------- */
+/* 吹き出し本体 - 枠線付きの吹き出し */
+.glad-balloon{
+  position: relative;
+  padding: 20px;
+  background-color: #FFE4E1;
+  border: 2px solid #ca8888;
+  border-radius: 10px;         /* 角丸を指定 */
+  margin-left: 60px;
+  display: inline-block;
+  margin-top:30px;
+}
+/* 三角アイコン - 枠線付きの吹き出し */
+.glad-balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20px;
+  border-right: 15px solid #ca8888;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.glad-balloon::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -12px;
+  top: 20px;
+  border-right: 15px solid #FFE4E1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+/* ----------------[E]はげましつぶやき---------------- */
+
+
+/* ----------------[S]Footer---------------- */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* ----------------[E]Footer---------------- */
