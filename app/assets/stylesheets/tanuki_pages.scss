@@ -2,7 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 * {
     font-family: "Kokoro", cursive;
+}
+
+.title {
+    padding: 30px;
+    margin: 30px;
+}
+
+.jumbotron{
+    background: #E6FFE9;
 }
