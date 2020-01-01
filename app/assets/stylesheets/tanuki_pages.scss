@@ -20,51 +20,75 @@
 
 
 .title {
-    padding: 30px;
-    margin: 30px;
-}
-
-.jumbotron{
-
+    padding: 10;
+    margin: 10px;
 }
 
 .top-page{
   border: solid #008000;
   border-radius: 10%;
-  padding:60px;
+  padding:10px;
   
 }
 
 .tanuki-image{
-   float:left;
-}
+   width: 50px;
+   height: auto;
+   float: left;
 
+}
 .balloon{
-    margin: 25px;
+    position: relative;
+    display: block;
+    margin: 10px;
 }
 
-.balloon:before,.balloon:after {
-    clear: both;
+.tanu-word{
+  font-size: 8px;
+}
+
+.twi-link{
+  font-size: 8px;
+  color: #2E8B57	;
+}
+
+.balloon:after {
     content: "";
     display: block;
+    clear: both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.balloon {
+    zoom: 1;
 }
 
 .sub-content{
   margin:30px;
 }
+
+@mixin nomal-balloon(){
+  float: left;
+  position: relative;
+  display: block;
+  padding: 5px;
+  margin-left: 55px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;  /*webkit系*/
+  -moz-box-sizing: border-box;  /*Firefox*/
+}
+
 /* ----------------[E]BASE---------------- */
 
 /* ----------------[S]悲しみつぶやき---------------- */
 
 /* 吹き出し本体 */
 .sad-balloon{
-  position: relative;
-  padding: 20px;
+  @include nomal-balloon();
+  padding: 10px;
   background-color: #ade0ff;
-  border-radius: 30px;
-  margin-left: 100px;
-  display: inline-block;
-  margin-top:30px;
+  border-radius: 20px;
 }
 /* 大きい丸 */
 .sad-balloon::before{
@@ -74,7 +98,7 @@
   border-radius: 50%;
   background-color: #ade0ff;
   left: -35px;
-  bottom: 15px;
+  top: 10px;
   width: 30px;
   height: 30px;
 }
@@ -85,8 +109,8 @@
   display: block;
   border-radius: 50%;
   background-color: #ade0ff;
-  left: -55px;
-  bottom: 10px;
+  left: -50px;
+  top: 13px;
   width: 15px;
   height: 15px;
 }
@@ -96,14 +120,12 @@
 /* ----------------[S]はげましつぶやき---------------- */
 /* 吹き出し本体 - 枠線付きの吹き出し */
 .glad-balloon{
-  position: relative;
-  padding: 20px;
+  @include nomal-balloon();
   background-color: #FFE4E1;
   border: 2px solid #ca8888;
   border-radius: 10px;         /* 角丸を指定 */
-  margin-left: 60px;
-  display: inline-block;
-  margin-top:30px;
+
+  // margin-top:30px;
 }
 /* 三角アイコン - 枠線付きの吹き出し */
 .glad-balloon::before{
