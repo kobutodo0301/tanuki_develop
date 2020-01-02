@@ -26,8 +26,9 @@
 
 .top-page{
   border: solid #008000;
-  border-radius: 10%;
+  border-radius: 5%;
   padding:10px;
+  margin-top: 45px;
   
 }
 
@@ -79,6 +80,9 @@
   -moz-box-sizing: border-box;  /*Firefox*/
 }
 
+.my-4{
+  border-color: #669933;
+}
 /* ----------------[E]BASE---------------- */
 
 /* ----------------[S]悲しみつぶやき---------------- */
@@ -188,3 +192,60 @@ footer ul li {
 }
 
 /* ----------------[E]Footer---------------- */
+
+/* ----------------[S]Header---------------- */
+
+header {
+  background-color: #DEB887;
+  margin-top:-45px;
+  position: fixed;
+  width: 100%;
+  z-index:99;
+}
+
+header ul {
+  float: right;
+  list-style: none;
+  margin-right: 10px;
+}
+
+header ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+#logo-image{
+  float: left;
+  height:30px;
+  width:auto;
+}
+
+#logo-menu{
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 5px;
+  
+}
+
+#logo-menu > li >a {
+  color: white;
+  font-weight: bold;
+}
+
+#logo {
+  float: left;
+  margin-left: 10px;
+  font-size: 1.4em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+#logo-menu > li >a:hover, #logo:hover {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+
+/* ----------------[E]Header---------------- */
