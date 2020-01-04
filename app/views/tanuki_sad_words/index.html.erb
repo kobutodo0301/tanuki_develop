@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h4>たぬきの小屋</h4>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "tanuki_sad_a_tri.png" %>"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "tanuki_happy_a_tri.png" %>"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "aicon-foot.png" %>"></a>
+  </li>
+</ul>
+
+<h4>たぬきのなやみ</h4>
+<p>なやみを投稿してぽじてぃぶな言葉をかけてもらおう。じぶんにぽじてぃぶな言葉をかけるも良し。</p>
+<%= link_to 'なやむ', new_tanuki_sad_word_path %>
+
+<hr class="my-4">
+
+<% if @tanuki_sad_words.count == 0 %>
+  たぬきになやみはない！
+<% end %>
+
+<table>
+  <tbody>
+    
+    <% @tanuki_sad_words.each do |tanuki_sad_word| %>
+      <tr>
+        <td><%= tanuki_sad_word.sad_word %></td>
+        <td><%= tanuki_sad_word.user_id %></td>
+        <td><%= link_to 'Show', tanuki_sad_word %></td>
+        <td><%= link_to 'Edit', edit_tanuki_sad_word_path(tanuki_sad_word) %></td>
+        <td><%= link_to 'Destroy', tanuki_sad_word, method: :delete, data: { confirm: '消してもよいですか?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<hr class="my-4">
+
+

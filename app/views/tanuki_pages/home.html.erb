@@ -14,7 +14,7 @@
         <tr>
         <td style="vertical-align: top;"><img class="tanuki-image" border="0" src="<%= asset_path "tanuki_sad_a_tri.png" %>" alt="たぬき悲しみ"></td>
         <td><div class="sad-balloon">
-            <span class="twi-link">@sad-tanuki</span>
+            <span class="twi-link"><mark>@sad-tanuki</mark></span>
             <p class="tanu-word">つかれた…。山に帰りたい…。</p>
         </div></td>
         </tr>
@@ -26,7 +26,7 @@
         <tr>
         <td style="vertical-align: top;"><img class="tanuki-image" border="0" src="<%= asset_path "tanuki_happy_a_tri.png" %>" alt="たぬき励まし"></td>
         <td><div class="glad-balloon">
-            <span class="twi-link">@sad-tanuki</span>
+            <span class="twi-link"><mark>@glad-tanuki</mark></span>
             <p class="tanu-word">まぁ元気だせや。いいこともあるで。</p>
         </div></td>
         </tr>
@@ -37,7 +37,7 @@
     
     <div class ="text-center">
         <p>ログインして他のたぬきから元気づけてもらおう。</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Twitterでログイン</a>
+        <a class="btn btn-primary btn-lg" href="<%= tanuki_sad_words_url %>" role="button"> Twitterでログイン</a>
     </div>
 </div>
     

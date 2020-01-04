@@ -1,0 +1,2 @@
+class TanukiSadWord < ApplicationRecord
+end

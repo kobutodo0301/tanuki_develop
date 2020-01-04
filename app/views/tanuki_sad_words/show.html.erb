@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sad word:</strong>
+  <%= @tanuki_sad_word.sad_word %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tanuki_sad_word.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_tanuki_sad_word_path(@tanuki_sad_word) %> |
+<%= link_to 'Back', tanuki_sad_words_path %>

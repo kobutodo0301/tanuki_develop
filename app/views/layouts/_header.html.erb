@@ -1,13 +1,13 @@
 <header class="header">
-  <a id="logo" href="#">
+  <a id="logo" href="<%= tanuki_pages_home_url %>">
     <img src=<%= asset_path "aicon-leaf.png" %> class="align-top" id="logo-image" alt="ぽじたぬ">
     <span style="padding-left:3px;">ぽじたぬ</span>
   </a>
   
   <nav>
     <ul id="logo-menu">
-      <li><%= link_to "Home",   '#' %></li>
-      <li><%= link_to "Log in", '#' %></li>
+      <li><%= link_to "Home",   tanuki_pages_home_url %></li>
+      <li><%= link_to "Log in", tanuki_sad_words_url %></li>
     </ul>
   </nav>
   

@@ -18,8 +18,13 @@
     font-family: "TnuFon", cursive;
 }
 
+a:hover{
+  background-color:transparent;
+}
+
 p {
   font-size:12px;
+  font-family: "TnuFon";
 }
 
 .title {
@@ -27,12 +32,12 @@ p {
     margin: 10px;
 }
 
+
 .top-page{
+  display: block;
   border: solid #008000;
   border-radius: 5%;
-  padding:10px;
-  margin-top: 45px;
-  
+  padding:10px;;
 }
 
 .tanuki-image{
@@ -43,6 +48,10 @@ p {
 
 .btn-lg, .btn-group-lg > .btn{
   font-size:14px;
+}
+
+a:visited{
+  color: white;
 }
 
 .balloon{
@@ -57,7 +66,7 @@ p {
 
 .twi-link{
   font-size: 8px;
-  color: #2E8B57	;
+  
 }
 
 .balloon:after {
@@ -204,8 +213,8 @@ footer ul li {
 
 header {
   background-color: #DEB887;
-  margin-top:-45px;
   position: fixed;
+  margin-top:-10px;
   width: 100%;
   z-index:99;
 }
