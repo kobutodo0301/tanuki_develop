@@ -14,9 +14,16 @@
 
 /* ----------------[S]BASE---------------- */
 
+
 * {
     font-family: "TnuFon", cursive;
 }
+
+.container-md {
+  // background-color:#66CC66;
+  background-color: #DEB887;
+}
+
 
 a:hover{
   background-color:transparent;
@@ -28,16 +35,18 @@ p {
 }
 
 .title {
-    padding: 10;
-    margin: 10px;
+    padding: 10px;
+    margin: 0 5px 5px 10px;
+    display: block;
+    border: solid #008000;
+    border-radius: 10px;
+    background-color:white;
 }
 
-
-.top-page{
-  display: block;
-  border: solid #008000;
-  border-radius: 5%;
-  padding:10px;;
+.page-top{
+  // background-color:#66CC66;
+  background-color: #DEB887;
+  height:40px;
 }
 
 .tanuki-image{
@@ -81,7 +90,12 @@ a:visited{
 }
 
 .sub-content{
-  margin:30px;
+  padding: 10px;
+  margin: 0 5px 5px 10px;
+  display: block;
+  border: solid #008000;
+  border-radius: 10px;
+  background-color:white;
 }
 
 @mixin nomal-balloon(){
@@ -99,6 +113,17 @@ a:visited{
 .my-4{
   border-color: #669933;
 }
+
+.btn{
+  background-color:#00CC00;
+  color:white;
+}
+
+.btn:hover{
+  background-color:green;
+  color:white;
+}
+
 /* ----------------[E]BASE---------------- */
 
 /* ----------------[S]悲しみつぶやき---------------- */
@@ -178,15 +203,21 @@ a:visited{
 
 /* ----------------[S]Footer---------------- */
 
+.footer-top {
+  background-color:black;
+  height:40px;
+}
+
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  padding: 10px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  background-color:black;
+  color: white;
+  height:40px;
 }
 
 footer a {
-  color: #555;
+  color: white;
 }
 
 footer a:hover {
@@ -213,8 +244,8 @@ footer ul li {
 
 header {
   background-color: #DEB887;
-  position: fixed;
-  margin-top:-10px;
+    // background-color:#66CC66;
+  position: block;
   width: 100%;
   z-index:99;
 }
