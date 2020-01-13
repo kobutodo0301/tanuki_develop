@@ -1,19 +1,8 @@
 <!--<p id="notice"><%= notice %></p>-->
 
 <div class="sub-content">
-  <h3>たぬきの小屋</h3>
-  
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "tanuki_sad_a_tri.png" %>"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "tanuki_happy_a_tri.png" %>"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active"　href="<%= tanuki_sad_words_url %>"><img class="tanuki-image" src="<%= asset_path "aicon-foot.png" %>"></a>
-    </li>
-  </ul>
+
+  <%= render 'layouts/tanuki_room' %>
   
   <h4>たぬきのなやみ</h4>
   <p>なやみを投稿してぽじてぃぶな言葉をかけてもらおう。じぶんにぽじてぃぶな言葉をかけるも良し。</p>

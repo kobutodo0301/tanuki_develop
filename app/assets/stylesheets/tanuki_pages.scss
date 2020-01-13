@@ -126,6 +126,32 @@ a:visited{
 
 /* ----------------[E]BASE---------------- */
 
+
+
+/* ----------------[S]RooM---------------- */
+.room-tab-link{
+  height: 90px;
+  width: 90px;
+  background-color: rgba(0,128,0,0.4);
+  color:white;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.room-tab-link:hover{
+  background-color: rgba(0,128,0,0.8);  
+}
+
+.nav > li > a{
+    padding: 6px 17px;
+}
+
+.room-tab-item{
+  padding: 3px
+}
+
+/* ----------------[E]RooM---------------- */
+
 /* ----------------[S]悲しみつぶやき---------------- */
 
 /* 吹き出し本体 */
